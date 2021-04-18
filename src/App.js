@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { Container, Row, Col } from "react-bootstrap";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Homepage from "./pages/homepage";
+import Activity from "./pages/activity";
+import Wallet from "./pages/wallet";
+import Market from "./pages/market";
+import Earn from "./pages/earn";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className="pt-3" fluid>
+      <Row>
+        <Col></Col>
+        <Col sm="12" lg="8" md="8" className="px-0">
+          <Router>
+            <Switch>
+              <Route path="/" exact component={Homepage} />
+              <Route path="/activity" component={Activity} />
+              <Route path="/wallet" component={Wallet} />
+              <Route path="/market" component={Market} />
+              <Route path="/earn" component={Earn} />
+            </Switch>
+          </Router>
+        </Col>
+        <Col></Col>
+      </Row>
+    </Container>
   );
 }
 

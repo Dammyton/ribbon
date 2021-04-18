@@ -1,13 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.br-l-5 {
+  border-radius: 1em 0 0 1em !important;
+  border-right-color: #a29797;
+}
+
+.br-r-5 {
+  border-radius: 0 1em 1em 0 !important;
+  border-left-color: #a29797;
+}
+
+.logo-size {
+  width: 6rem;
+}
+
+h6.afya {
+  background: white;
+  border-radius: 50%;
+  color: red;
+  width: min-content;
+  padding: 0.9em 0.5em;
+}
+
+h6.zar {
+  background: white;
+  border-radius: 50%;
+  color: #03a9f4;
+  width: min-content;
+  padding: 0.9em 0.5em;
+}
+
+.bg-pink {
+  background-color: #e34e7b !important;
+}
+
+.text-blue {
+  color: #03a9f4;
+}
+
+.btn-blue {
+  background: #03a9f4 !important;
+  border-color: #03a9f4 !important;
+}
+
+.bg-darksecondary {
+  background: #d9d9d9 !important;
+}
+
+.br-0 {
+  border-radius: 0 !important;
+}
+
+.icon-size {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.list-group-item {
+  padding: 0.5rem 1.25rem !important;
+}
+
+.fa.size {
+  font-size: 1.7em;
+}
+
+.fa.menu-icon {
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.1rem !important;
+}
+
+a.active,
+a:hover {
+  color: red !important;
+}
+
+a.nav-link,
+.text-pink {
+  color: #e34e7b !important;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
+
+/* Mobile responsiveness */
+@media (min-width: 576px) {
+  .navbar-expand-sm {
+    justify-content: space-between !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-sm {
+    justify-content: space-between !important;
+  }
+
+  .navbar-expand-lg {
+    flex-flow: row nowrap;
+    justify-content: space-between !important;
+  }
+
+  .fixed-bottom {
+    margin: auto;
+    width: 70%;
+  }
 }
